@@ -42,12 +42,12 @@ class Array:
         return temp
 
     def join(self, separator=','):
-        print(separator, len(separator))
         temp = ''
+        length = len(separator)
         for item in self.value:
             temp += str(item) + separator
-        if len(separator):
-            return temp[:-len(separator)]
+        if length:
+            return temp[:-length]
         return temp
 
     def push(self, *args):
